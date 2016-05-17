@@ -138,7 +138,7 @@ $('.message-report-issue a').click(function(event) {
 	
 	  event.preventDefault();
 	
-	  window.open('https://github.com/rmhstechteam/rmhstechteam.github.io/issues');
+	  window.open('https://github.com/rmhstechteam/rmhstechteam.github.io/wiki');
 
 });
 

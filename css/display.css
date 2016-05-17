@@ -1,0 +1,117 @@
+body {
+	background: #E0E0E0;
+	text-align: center;
+}
+
+.container-fluid {
+	padding-bottom: 26px;
+}
+
+#heading {
+	color: #662D92;
+	font-size: 50px;
+	font-weight: 700;
+	margin-top: 26px;
+}
+
+#sub-heading {
+	color: #662D92;
+	font-size: 32px;
+	font-weight: 700;
+	margin-top: 6px;
+}
+
+#logo {
+	height: 150px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 16px;
+	width: 190px;
+}
+
+.key-container {
+	background-color: #662D92;
+	margin-top: 36px;
+	color: #FFFFFF;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.main {
+    margin-top: 36px;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+.main table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main tr:nth-child(odd) {
+    background-color: #b2b2b2;
+}
+
+.main tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.main td {
+    vertical-align: middle;
+    border: 1px solid #000000;
+    border-width: 0 1px 1px 0;
+    text-align: center;
+    padding: 16px;
+    font-size: 42px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.main tr:last-child td {
+    border-width: 0 1px 0 0;
+}
+
+.main tr td:last-child {
+    border-width: 0 0 1px;
+}
+
+.main tr:last-child td:last-child {
+    border-width: 0;
+}
+
+.main tr:first-child td {
+    background: -o-linear-gradient(bottom, #662D92 5%, #662D92 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #662D92), color-stop(1, #662D92));
+    background: -moz-linear-gradient(center top, #662D92 5%, #662D92 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#662D92", endColorstr="#662D92");
+    background: -o-linear-gradient(top, #662D92, 662d92);
+    background-color: #662D92;
+    border: 0 solid #000000;
+    text-align: center;
+    border-width: 0 0 1px 1px;
+    font-size: 46px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.main tr:first-child:hover td {
+    background: -o-linear-gradient(bottom, #662D92 5%, #662D92 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #662D92), color-stop(1, #662D92));
+    background: -moz-linear-gradient(center top, #662D92 5%, #662D92 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#662D92", endColorstr="#662D92");
+    background: -o-linear-gradient(top, #662D92, 662d92);
+    background-color: #662D92;
+}
+
+.main tr:first-child td:first-child {
+    border-width: 0 0 1px;
+}
+
+.main tr:first-child td:last-child {
+    border-width: 0 0 1px 1px;
+}

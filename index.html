@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Student Services Portal</title>
+    
+    <!-- links bootstrap.min.css -->
+    <link rel='stylesheet' href='dist/bootstrap.min.css'>
+    
+    <!-- links pure.min.css -->
+    <link rel='stylesheet' href='dist/pure.min.css'>
+    
+    <!-- links index.css -->
+    <link rel='stylesheet' href='css/index.css'>
+
+</head>
+
+<body>
+
+	<div class='wrapper'>
+    
+    	<div class='container'>
+        
+        	<div class='form'>
+        
+        		<!-- logo -->
+                <img src='img/logo.png' class='img-responsive' id='logo'>
+                
+                <!-- alert messages -->
+                <div class='alert alert-warning fade in' id='alert-warning-password-mismatch'>
+
+                	<strong>Warning!</strong> Passwords Do Not Match
+                
+                </div>
+                
+                <div class='alert alert-warning fade in' id='alert-warning-all-fields-required'>
+                
+                	<strong>Warning!</strong> All Fields Are Required
+                
+                </div>
+                
+                <div class='alert alert-warning fade in' id='alert-warning-invalid-credentials'>
+                
+                	<strong>Warning!</strong> Invalid Login Credentials
+                
+                </div>
+                
+                <div class='alert alert-warning fade in' id='alert-warning-invalid-email'>
+                
+                	<strong>Warning!</strong> Invalid Email Address
+                
+                </div>
+                
+                <div class='alert alert-warning fade in' id='alert-warning-register-error'>
+                
+                	<strong>Warning!</strong> Email Address Already in Use
+                
+                </div>
+                
+                <div class='alert alert-success fade in' id='alert-warning-reset-successful'>
+                
+                	<strong>Success!</strong> Please Check Your Email for a Link to Reset Your Password
+                
+                </div>
+                
+                <div class='alert alert-success fade in' id='alert-warning-sign-up-success'>
+                
+                	<strong>Register Success!</strong>
+                
+                </div>
+                
+                <div class='alert alert-success fade in' id='alert-warning-login-success'>
+                
+                	<strong>Log In Success!</strong> Redirecting...
+                
+                </div>
+                               
+                <!-- log in form -->
+                <form role='form' id='login-form'>
+                
+                    <input type='text' class='form-control' id='login-form-email' placeholder='Email Address' />
+                    <input type='password' class='form-control' id='login-form-password' placeholder='Password' />
+                
+                    <label for='remember' class='pure-checkbox'>
+                    
+                    	<input id='remember' type='checkbox'> Remember Me
+                    
+                    </label>
+                    
+                    <button type='button' class='btn btn-default' id='login-form-login'>Log In</button>
+                    
+                    <label class='message-not-registered'>Not Registered? <a href=''>Register</a></label>
+                    <label class='message-forgot-something'> <a href=''>Forgot Something?</a></label>
+                    <label class='message-report-issue'> <a href=''>Report an Issue</a></label>
+                    
+                </form>
+                    
+                <!-- register form -->
+                <form role='form' id='register-form'>
+                    
+                    <input type='text' class='form-control' id='register-form-firstName' placeholder='First Name' />
+                    <input type='text' class='form-control' id='register-form-lastName' placeholder='Last Name' />
+                    <input type='text' class='form-control' id='register-form-email' placeholder='Email Address' />
+                    <input type='password' class='form-control' id='register-form-password' placeholder='Password' />
+                    <input type='password' class='form-control' id='register-form-confirmPassword' placeholder='Confirm Password' />
+                    
+                    <button type='button' class='btn btn-default' id='register-form-create'>Register</button>
+                    
+                    <label class='message-already-registered'>Already Registered? <a href=''>Log In</a></label>
+                    <label class='message-forgot-something'> <a href=''>Forgot Something?</a></label>
+                    <label class='message-report-issue'> <a href=''>Report an Issue</a></label>
+                    
+                </form>
+                    
+                <!-- forgot form -->
+                <form role='form' id='forgot-form'>
+                    
+                    <input type='text' class='form-control' id='forgot-form-email' placeholder='Email' />
+                    
+                    <button type='button' class='btn btn-default' id='forgot-form-reset-password'>Reset Password</button>
+                    
+                    <label class='message-already-registered'>Already Registered? <a href=''>Log In</a></label>
+                    <label class='message-not-registered'>Not Registered? <a href=''>Register</a></label>
+                    <label class='message-report-issue'> <a href=''>Report an Issue</a></label>
+                
+                </form>
+        
+        	</div>
+        
+        </div>
+             
+    </div>
+    
+    <!-- links jquery.min.js -->
+	<script type='text/javascript' src='dist/jquery.min.js'></script>
+	
+    <!-- links bootstrap.min.js -->
+	<script type='text/javascript' src='dist/bootstrap.min.js'></script>
+    
+    <!-- links parse.min.js -->
+	<script type='text/javascript' src='dist/parse.min.js'></script>
+    
+    <!-- links moment.min.js -->
+	<script type='text/javascript' src='dist/moment.min.js'></script>
+
+	<!-- links index.js -->
+	<script type='text/javascript' src='js/index.js'></script>
+
+</body>
+
+</html>

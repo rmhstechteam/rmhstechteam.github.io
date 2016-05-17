@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Student Services Portal</title>
+    
+    <!-- links bootstrap.min.css -->
+    <link rel='stylesheet' href='dist/bootstrap.min.css'>
+    
+    <!-- links pure.min.css -->
+    <link rel='stylesheet' href='dist/pure.min.css'>
+    
+    <!-- links font awesome -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    
+    <!-- links dashboard.css -->
+    <link rel='stylesheet' href='css/dashboard.css'>
+
+</head>
+
+<body>
+
+	<div class='wrapper' id='wrapper-loader'>
+    
+    	<div class='container'>
+        
+        	<div class='form-loader'>
+            
+            	<div class='spinner'>
+                
+                    <div class='bounce1'></div>
+                    <div class='bounce2'></div>
+                    <div class='bounce3'></div>
+                    
+				</div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+    
+    <div class='wrapper' id='wrapper-form'>
+    
+    	<div class='container'>
+        
+        	<div class='form'>
+            
+            	<!-- logo -->
+                <img src='img/logo.png' class='img-responsive' id='logo'>
+                
+                <!-- alerts -->
+                <div class='alert alert-warning fade in' id='alert-warning-max-characters'>
+
+                	<strong>Warning!</strong> Note Must Not Contain More Than 30 Characters
+                
+                </div>
+                
+                <div class='alert alert-success fade in' id='alert-warning-update-success'>
+                
+                	<strong>Update Success!</strong>
+                
+                </div>
+                
+                <div class='alert alert-warning fade in' id='alert-warning-update-failure'>
+                
+                	<strong>Update Failure!</strong> Please Try Again
+                
+                </div>
+                
+                <div class='alert alert-warning fade in' id='alert-warning-available-failure'>
+                
+                	<strong>Warning!</strong> Unable to Be Available out of the Building
+                
+                </div>
+                
+                <!-- form -->
+                <form role='form' id='dashboard-form'>
+                
+                    <div class='btn-group btn-group-justified' role='group'>
+                    
+                    	<div class='btn-group'>
+                    
+                    		<button type='button' class='btn btn-default' id='location-button' value=''>
+                    
+                    			In Building <i class='fa fa-times' id='location-times'></i><i class='fa fa-check' id='location-check'></i>
+                    
+                    		</button>
+                    
+                    	</div>
+                    
+                    </div>
+                    
+                    <div class='btn-group btn-group-justified' role='group'>
+                    
+                    	<div class='btn-group'>
+                    
+                    		<button type='button' class='btn btn-default' id='availability-button' value=''>
+                    
+                    			Availability <i class='fa fa-times' id='availability-times'></i><i class='fa fa-check' id='availability-check'></i>
+                    
+                    		</button>
+                    
+                    	</div>
+                    
+                    </div>
+                    
+                    <div class='form-group'>
+                    
+                    	<textarea class='form-control' rows='4' id='comment' placeholder='Note...'></textarea>
+                    
+                    </div>
+                    
+                    <button class='pure-button' id='update-button'>
+                    
+                    	Update <i class='fa fa-cog'></i>
+                    
+                    </button>
+                    
+                    <button type='button' class='btn btn-default' id='dashboard-form-log-out'>Log Out</button>
+                    
+                    <label class='message-signed-in-as'></label>
+                    <label class='message-last-updated'></label>
+                    <label class='message-report-issue'> <a href=''>Report an Issue</a></label>
+                
+                </form>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+	<!-- links jquery.min.js -->
+	<script type='text/javascript' src='dist/jquery.min.js'></script>
+	
+    <!-- links bootstrap.min.js -->
+	<script type='text/javascript' src='dist/bootstrap.min.js'></script>
+    
+    <!-- links parse.min.js -->
+	<script type='text/javascript' src='dist/parse.min.js'></script>
+    
+    <!-- links moment.min.js -->
+	<script type='text/javascript' src='dist/moment.min.js'></script>
+
+	<!-- links dashboard.js -->
+	<script type='text/javascript' src='js/dashboard.js'></script>
+
+</body>
+
+</html>
